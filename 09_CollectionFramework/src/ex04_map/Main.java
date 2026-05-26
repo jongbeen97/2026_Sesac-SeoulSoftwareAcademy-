@@ -46,6 +46,12 @@ public class Main {
       System.out.println("key"+entry.getKey() + ".value" +entry.getValue());
     }
     // 처음 엔트리에 비해 가독성이 더 좋아진다. 
+
+    // 7. map.of() 
+    // 정적 팩토리 메서드 of(): new 대신 사용하는 객체 생성 메서드 
+    // 이렇게 만든 Map 객체는 수정이 불가능합니다. (Immutable : put(),remove() 등 호출을 하면 Error 발생 , 수정이 안됨)
+    Map<String,Object> map2 = Map.of("name","홍길동","age","30");
+    System.out.println(map2);
   }
 
 }
